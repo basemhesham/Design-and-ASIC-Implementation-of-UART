@@ -1,0 +1,32 @@
+Loading cell instances...
+Number of Standard Cells: 0
+Number of Macro Cells: 0
+Number of IO Pad Cells: 0
+Number of Blocks: 0
+Loading P/G wires and vias...
+Number of VDD Wires: 23
+Number of VDD Vias: 25
+Number of VDD Terminals: 0
+Number of VSS Wires: 25
+Number of VSS Vias: 36
+Number of VSS Terminals: 0
+**************Verify net VDD connectivity*****************
+  Number of floating wires: 13
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+**************Verify net VSS connectivity*****************
+  Number of floating wires: 13
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Overall runtime: 0 seconds.
+{PATH_11_25 PATH_11_24 PATH_11_23 PATH_11_22 PATH_11_21 PATH_11_20 PATH_11_19 PATH_11_18 PATH_11_17 PATH_11_16 PATH_11_15 PATH_11_14 PATH_11_13 PATH_11_12 PATH_11_11 PATH_11_10 PATH_11_9 PATH_11_8 PATH_11_7 PATH_11_6 PATH_11_5 PATH_11_4 PATH_11_3 PATH_11_2 PATH_11_1 PATH_11_0}

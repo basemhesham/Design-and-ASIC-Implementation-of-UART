@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : area
+Design : UART
+Version: O-2018.06-SP1
+Date   : Sat Apr 20 12:22:46 2024
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ss0p75v125c (File: /home/ICer/Projects/UART/ref/std_cells/saed32rvt_ss0p75v125c.db)
+
+Number of ports:                          233
+Number of nets:                           552
+Number of cells:                          333
+Number of combinational cells:            264
+Number of sequential cells:                56
+Number of macros/black boxes:               0
+Number of buf/inv:                         52
+Number of references:                       3
+
+Combinational area:                608.420738
+Buf/Inv area:                       66.077440
+Noncombinational area:             377.149703
+Macro/Black Box area:                0.000000
+Net Interconnect area:             181.195949
+
+Total cell area:                   985.570441
+Total area:                       1166.766390
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ------------------------
+UART                               985.5704    100.0    1.2707     0.0000  0.0000  UART
+U0_UART_RX                         674.4982     68.4    0.0000     0.0000  0.0000  UART_RX
+U0_UART_RX/U0_data_sampling        129.8676     13.2  101.4035    28.4641  0.0000  data_sampling
+U0_UART_RX/U0_deserializer         133.1715     13.5   76.2432    56.9283  0.0000  deserializer_DATA_WIDTH8
+U0_UART_RX/U0_edge_bit_counter     170.7848     17.3   99.6244    71.1603  0.0000  edge_bit_counter
+U0_UART_RX/U0_par_chk               33.5470      3.4   26.4310     7.1160  0.0000  par_chk_DATA_WIDTH8
+U0_UART_RX/U0_stp_chk               12.1989      1.2    5.0829     7.1160  0.0000  stp_chk
+U0_UART_RX/U0_strt_chk              10.9282      1.1    3.8122     7.1160  0.0000  strt_chk
+U0_UART_RX/U0_uart_fsm             184.0003     18.7  162.6522    21.3481  0.0000  uart_rx_fsm_DATA_WIDTH8
+U0_UART_TX                         309.8015     31.4    0.0000     0.0000  0.0000  UART_TX_DATA_WIDTH8
+U0_UART_TX/U0_Serializer           127.3261     12.9   49.0498    78.2764  0.0000  Serializer_WIDTH8
+U0_UART_TX/U0_fsm                   61.7570      6.3   33.2929    28.4641  0.0000  uart_tx_fsm
+U0_UART_TX/U0_mux                   10.4199      1.1    3.3039     7.1160  0.0000  mux
+U0_UART_TX/U0_parity_calc          110.2985     11.2   46.2542    64.0443  0.0000  parity_calc_WIDTH8
+--------------------------------  ---------  -------  --------  ---------  ------  ------------------------
+Total                                                 608.4207   377.1497  0.0000
+
+1

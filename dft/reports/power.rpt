@@ -1,0 +1,90 @@
+Loading db file '/home/ICer/Projects/UART/ref/std_cells/saed32rvt_ss0p75v125c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : UART
+Version: O-2018.06-SP1
+Date   : Thu Apr 18 17:18:51 2024
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p75v125c (File: /home/ICer/Projects/UART/ref/std_cells/saed32rvt_ss0p75v125c.db)
+
+
+Operating Conditions: ss0p75v125c   Library: saed32rvt_ss0p75v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+UART                   8000              saed32rvt_ss0p75v125c
+mux2X1_0               ForQA             saed32rvt_ss0p75v125c
+mux2X1_1               ForQA             saed32rvt_ss0p75v125c
+UART_TX_DATA_WIDTH8_test_1
+                       8000              saed32rvt_ss0p75v125c
+UART_RX_test_1         8000              saed32rvt_ss0p75v125c
+uart_tx_fsm_test_1     ForQA             saed32rvt_ss0p75v125c
+Serializer_WIDTH8_test_1
+                       ForQA             saed32rvt_ss0p75v125c
+mux_test_1             ForQA             saed32rvt_ss0p75v125c
+parity_calc_WIDTH8_test_1
+                       ForQA             saed32rvt_ss0p75v125c
+uart_rx_fsm_DATA_WIDTH8_test_1
+                       8000              saed32rvt_ss0p75v125c
+edge_bit_counter_test_1
+                       8000              saed32rvt_ss0p75v125c
+data_sampling_test_1   8000              saed32rvt_ss0p75v125c
+deserializer_DATA_WIDTH8_test_1
+                       ForQA             saed32rvt_ss0p75v125c
+strt_chk_test_1        ForQA             saed32rvt_ss0p75v125c
+par_chk_DATA_WIDTH8_test_1
+                       ForQA             saed32rvt_ss0p75v125c
+stp_chk_test_1         ForQA             saed32rvt_ss0p75v125c
+mux2X1_2               ForQA             saed32rvt_ss0p75v125c
+
+
+Global Operating Voltage = 0.75 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+UART                                      0.486    6.635 2.19e+07   28.989 100.0
+  U0_UART_RX (UART_RX_test_1)             0.169    3.191 1.37e+07   17.046  58.8
+    U0_stp_chk (stp_chk_test_1)        2.03e-03    0.119 2.76e+05    0.397   1.4
+    U0_par_chk (par_chk_DATA_WIDTH8_test_1)
+                                       4.03e-03    0.137 8.41e+05    0.982   3.4
+    U0_strt_chk (strt_chk_test_1)      1.78e-03    0.116 2.35e+05    0.353   1.2
+    U0_deserializer (deserializer_DATA_WIDTH8_test_1)
+                                       2.52e-02    0.703 2.61e+06    3.342  11.5
+    U0_data_sampling (data_sampling_test_1)
+                                       3.48e-02    0.385 2.99e+06    3.414  11.8
+    U0_edge_bit_counter (edge_bit_counter_test_1)
+                                       5.96e-02    1.312 3.84e+06    5.213  18.0
+    U0_uart_fsm (uart_rx_fsm_DATA_WIDTH8_test_1)
+                                       3.22e-02    0.418 2.76e+06    3.207  11.1
+  U0_UART_TX (UART_TX_DATA_WIDTH8_test_1)
+                                          0.102    3.353 7.02e+06   10.477  36.1
+    U0_parity_calc (parity_calc_WIDTH8_test_1)
+                                       2.79e-02    1.171 2.57e+06    3.771  13.0
+    U0_mux (mux_test_1)                6.89e-03    0.163 3.36e+05    0.506   1.7
+    U0_Serializer (Serializer_WIDTH8_test_1)
+                                       3.57e-02    1.450 2.71e+06    4.199  14.5
+    U0_fsm (uart_tx_fsm_test_1)        2.36e-02    0.567 1.27e+06    1.863   6.4
+  U2_mux2X1 (mux2X1_1)                 4.27e-04 9.30e-04 4.08e+04 4.22e-02   0.1
+  U1_mux2X1 (mux2X1_2)                    0.101 2.47e-02 6.92e+04    0.195   0.7
+  U0_mux2X1 (mux2X1_0)                    0.113 2.49e-02 6.92e+04    0.207   0.7
+1

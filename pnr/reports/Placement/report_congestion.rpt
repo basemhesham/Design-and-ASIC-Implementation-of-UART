@@ -1,0 +1,16 @@
+Warning: Layer MRDL does not have a preferred direction, skipped.
+****************************************
+Report : congestion
+Design : UART
+Version: O-2018.06-SP1
+Date   : Wed Apr 24 18:09:16 2024
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |       2 |     1 |       2  ( 0.51%) |       2
+H routing |       2 |     1 |       2  ( 1.02%) |       2
+V routing |       0 |     0 |       0  ( 0.00%) |       0
+
+1

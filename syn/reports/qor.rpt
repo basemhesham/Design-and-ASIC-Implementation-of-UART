@@ -1,0 +1,122 @@
+ 
+****************************************
+Report : qor
+Design : UART
+Version: O-2018.06-SP1
+Date   : Sat Apr 20 12:22:46 2024
+****************************************
+
+
+  Timing Path Group 'INREG'
+  -----------------------------------
+  Levels of Logic:              13.00
+  Critical Path Length:          1.88
+  Critical Path Slack:         187.69
+  Critical Path Clk Period:    271.32
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'REGOUT'
+  -----------------------------------
+  Levels of Logic:               2.00
+  Critical Path Length:          0.77
+  Critical Path Slack:         188.90
+  Critical Path Clk Period:    271.32
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'UART_CLK_RX'
+  -----------------------------------
+  Levels of Logic:               7.00
+  Critical Path Length:          2.18
+  Critical Path Slack:         268.78
+  Critical Path Clk Period:    271.32
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:         -0.01
+  Total Hold Violation:         -0.04
+  No. of Hold Violations:        4.00
+  -----------------------------------
+
+  Timing Path Group 'UART_CLK_TX'
+  -----------------------------------
+  Levels of Logic:               5.00
+  Critical Path Length:          1.76
+  Critical Path Slack:        8678.37
+  Critical Path Clk Period:   8680.50
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:         -0.02
+  Total Hold Violation:         -0.02
+  No. of Hold Violations:        1.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         13
+  Hierarchical Port Count:        199
+  Leaf Cell Count:                317
+  Buf/Inv Cell Count:              52
+  Buf Cell Count:                   0
+  Inv Cell Count:                  52
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       264
+  Sequential Cell Count:           53
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      608.420738
+  Noncombinational Area:   377.149703
+  Buf/Inv Area:             66.077440
+  Total Buffer Area:             0.00
+  Total Inverter Area:          66.08
+  Macro/Black Box Area:      0.000000
+  Net Area:                181.195949
+  -----------------------------------
+  Cell Area:               985.570441
+  Design Area:            1166.766390
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           356
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: IC_EDA
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.80
+  Logic Optimization:                  0.19
+  Mapping Optimization:                1.16
+  -----------------------------------------
+  Overall Compile Time:               20.76
+  Overall Compile Wall Clock Time:    31.52
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.02  TNS: 0.06  Number of Violating Paths: 5
+
+  --------------------------------------------------------------------
+
+
+1

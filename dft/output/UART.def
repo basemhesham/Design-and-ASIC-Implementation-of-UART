@@ -1,0 +1,69 @@
+VERSION 5.5 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN UART ;
+
+SCANCHAINS 1 ;
+
+- 1
++ START PIN SI
++ FLOATING U0_UART_RX/U0_data_sampling/Samples_reg_0_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_data_sampling/Samples_reg_1_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_data_sampling/Samples_reg_2_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_data_sampling/sampled_bit_reg ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_deserializer/P_DATA_reg_0_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_deserializer/P_DATA_reg_1_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_deserializer/P_DATA_reg_2_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_deserializer/P_DATA_reg_3_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_deserializer/P_DATA_reg_4_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_deserializer/P_DATA_reg_5_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_deserializer/P_DATA_reg_6_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_deserializer/P_DATA_reg_7_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_edge_bit_counter/bit_count_reg_0_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_edge_bit_counter/bit_count_reg_1_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_edge_bit_counter/bit_count_reg_2_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_edge_bit_counter/bit_count_reg_3_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_par_chk/par_err_reg ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_stp_chk/stp_err_reg ( IN SI ) ( OUT Q )
+           U0_UART_RX/U0_strt_chk/strt_glitch_reg ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_uart_fsm/current_state_reg_0_ ( IN SI ) ( OUT Q )
+           U0_UART_RX/U0_uart_fsm/current_state_reg_1_ ( IN SI ) ( OUT QN )
+           U0_UART_RX/U0_uart_fsm/current_state_reg_2_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_Serializer/DATA_V_reg_0_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_Serializer/DATA_V_reg_1_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_Serializer/DATA_V_reg_2_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_Serializer/DATA_V_reg_3_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_Serializer/DATA_V_reg_4_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_Serializer/DATA_V_reg_5_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_Serializer/DATA_V_reg_6_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_Serializer/DATA_V_reg_7_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_Serializer/ser_count_reg_0_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_Serializer/ser_count_reg_1_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_Serializer/ser_count_reg_2_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_fsm/busy_reg ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_fsm/current_state_reg_0_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_fsm/current_state_reg_1_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_fsm/current_state_reg_2_ ( IN SI ) ( OUT Q )
+           U0_UART_TX/U0_parity_calc/DATA_V_reg_0_ ( IN SI ) ( OUT Q )
+           U0_UART_TX/U0_parity_calc/DATA_V_reg_1_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_parity_calc/DATA_V_reg_2_ ( IN SI ) ( OUT Q )
+           U0_UART_TX/U0_parity_calc/DATA_V_reg_3_ ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_parity_calc/DATA_V_reg_4_ ( IN SI ) ( OUT Q )
+           U0_UART_TX/U0_parity_calc/DATA_V_reg_5_ ( IN SI ) ( OUT Q )
+           U0_UART_TX/U0_parity_calc/DATA_V_reg_6_ ( IN SI ) ( OUT Q )
+           U0_UART_TX/U0_parity_calc/DATA_V_reg_7_ ( IN SI ) ( OUT Q )
+           U0_UART_TX/U0_parity_calc/parity_reg ( IN SI ) ( OUT QN )
+           U0_UART_TX/U0_mux/OUT_reg ( IN SI ) ( OUT Q )
++ PARTITION scan_clk_30_30
++ STOP PIN SO ;
+
+END SCANCHAINS
+
+END DESIGN

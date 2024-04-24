@@ -1,0 +1,71 @@
+Warning: Use -per_clock_root option along with -type latency option to split the reporting of a clock to per clock root, so that the clock trees associated with different root pins are reported separately
+ Info: Initializing timer in CLOCK_SYN_MODE
+****************************************
+Report : clock qor
+        -type latency
+        -clocks SCAN_CLK
+                UART_CLK_RX
+                UART_CLK_TX
+Design : UART
+Version: O-2018.06-SP1
+Date   : Wed Apr 24 18:11:31 2024
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+==============================================
+==== Latency Reporting for Corner default ====
+==============================================
+
+=================================================== Summary Table for Corner default ===================================================
+Clock /                               Attrs     Sinks    Target    Global    Target       Max       Min    Median   Latency  Boundary
+Skew Group                                                 Skew      Skew   Latency   Latency   Latency   Latency   Std Dev      Skew
+----------------------------------------------------------------------------------------------------------------------------------------
+### Mode: default, Scenario: default
+SCAN_CLK                                M,D        53     10.00      0.02        --      0.32      0.30      0.32      0.01        --
+----------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                         53      0.05      0.02        --      0.32      0.30        --        --        --
+
+
+  & = Offset derived from max_clock_tree_path / min_clock_tree_path
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 5 largest and 5 smallest datapoints per clock / skew group (L=largest, S=smallest)
+========================================== Details Table for Corner default ==========================================
+Clock /                                Sink                             Launch     Capture        Late       Early
+Skew Group                             Name                            Latency     Latency      Offset      Offset
+----------------------------------------------------------------------------------------------------------------------
+### Mode: default, Scenario: default
+SCAN_CLK
+                                   L   U0_UART_RX/U0_data_sampling/Samples_reg_0_/CLK
+                                                                          0.32 r      0.32 r        --          --
+                                   L   U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                                          0.32 r      0.32 r        --          --
+                                   L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                                          0.32 r      0.32 r        --          --
+                                   L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                                          0.32 r      0.32 r        --          --
+                                   L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                                          0.32 r      0.32 r        --          --
+                                   S   U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                                          0.30 r      0.30 r        --          --
+                                   S   U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                                          0.30 r      0.30 r        --          --
+                                   S   U0_UART_TX/U0_parity_calc/parity_reg/CLK
+                                                                          0.30 r      0.30 r        --          --
+                                   S   U0_UART_TX/U0_parity_calc/DATA_V_reg_0_/CLK
+                                                                          0.30 r      0.30 r        --          --
+                                   S   U0_UART_TX/U0_parity_calc/DATA_V_reg_1_/CLK
+                                                                          0.30 r      0.30 r        --          --
+
+
+1

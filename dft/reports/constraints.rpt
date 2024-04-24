@@ -1,0 +1,92 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : UART
+Version: O-2018.06-SP1
+Date   : Thu Apr 18 17:18:51 2024
+****************************************
+
+
+   min_delay/hold ('SCAN_CLK' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   U0_UART_RX/U0_data_sampling/sampled_bit_reg/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_deserializer/P_DATA_reg_0_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_edge_bit_counter/bit_count_reg_0_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_edge_bit_counter/bit_count_reg_3_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_par_chk/par_err_reg/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_stp_chk/stp_err_reg/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_uart_fsm/current_state_reg_0_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_TX/U0_mux/OUT_reg/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_deserializer/P_DATA_reg_1_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_deserializer/P_DATA_reg_2_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_deserializer/P_DATA_reg_3_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_deserializer/P_DATA_reg_4_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_deserializer/P_DATA_reg_5_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_deserializer/P_DATA_reg_6_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_deserializer/P_DATA_reg_7_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_TX/U0_Serializer/DATA_V_reg_1_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_TX/U0_Serializer/DATA_V_reg_2_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_TX/U0_Serializer/DATA_V_reg_3_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_TX/U0_Serializer/DATA_V_reg_4_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_TX/U0_Serializer/DATA_V_reg_5_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_TX/U0_Serializer/DATA_V_reg_6_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_TX/U0_Serializer/DATA_V_reg_7_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_TX/U0_Serializer/ser_count_reg_0_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_TX/U0_fsm/current_state_reg_0_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_TX/U0_parity_calc/DATA_V_reg_2_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_TX/U0_parity_calc/DATA_V_reg_4_/SI
+                                0.08           0.04 f        -0.04  (VIOLATED)
+   U0_UART_RX/U0_data_sampling/Samples_reg_1_/SI
+                                0.08           0.07 f        -0.01  (VIOLATED)
+   U0_UART_RX/U0_uart_fsm/current_state_reg_2_/SI
+                                0.08           0.07 f        -0.01  (VIOLATED)
+   U0_UART_RX/U0_data_sampling/Samples_reg_2_/SI
+                                0.08           0.07 f        -0.01  (VIOLATED)
+   U0_UART_TX/U0_fsm/busy_reg/SI
+                                0.08           0.07 f        -0.01  (VIOLATED)
+   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/SI
+                                0.08           0.07 f        -0.01  (VIOLATED)
+   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/SI
+                                0.08           0.07 f        -0.01  (VIOLATED)
+   U0_UART_RX/U0_stp_chk/stp_err_reg/D
+                                0.08           0.07 r        -0.01  (VIOLATED)
+   U0_UART_TX/U0_Serializer/ser_count_reg_1_/SI
+                                0.08           0.08 f         0.00  (VIOLATED: increase significant digits)
+
+
+1
