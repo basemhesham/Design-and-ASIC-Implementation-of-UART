@@ -1,20 +1,30 @@
 # Design-and-ASIC-Implementation-of-UART
 This repository presents ASIC design flow for UART utilizing RTL to GDS implementation This has been simulated on VCS and has been implemented by using Verilog description language which has been synthesized using Design Compiler and Back End design using Synopsys IC Compiler II
 
-UART stands for universal asynchronous receiver / transmitter and defines a protocol, or set of rules, for exchanging serial data between two devices. UART is very simple and only uses two wires between transmitter and receiver to transmit and receive in both directions. so it is very useful for faster communication devices. Transmitter and Receiver blocks designed by algorithm state machine method simulated in ModelSim, synthesized in Design Compiler, and extracted in ICC II in SAED 32 nm CMOS cell library.
+UART stands for universal asynchronous receiver / transmitter and defines a protocol, or set of rules, for exchanging serial data between two devices. UART is very simple and only uses two wires between transmitter and receiver to transmit and receive in both directions. so it is very useful for faster communication devices. Transmitter and Receiver blocks designed by algorithm state machine method simulated in VCS, synthesized in Design Compiler, and extracted in ICC II in SAED 32 nm CMOS cell library.
 
 ## Introduction
 The first step of the ASIC Design flow is the register transfer level (RTL) design, where the high-level architectural description is transformed into a digital representation using VerilogL. This involves designing and implementing the behavior and connections of individual digital components.
 
 UART can be divided into sending module and receiving module according to functions. It is worth noting that in order to take into account the accuracy and efficiency of information transmission, the sending module and the receiving module have different methods of confirming information.
 
-### Transmitter Module:
+### Transmitter block Diagram:
 During the transmission, the transmitter transmits the parallel data by converting it into a serial data stream and includes „start bit‟ and „stop bit‟   
   ![UART_TX Block diagram](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/3ba1bb48-0140-43e0-8f7c-b8b9ae9addb6)
 
-### Receiver Module:
+UART_RX support oversampling by 8, 16, 32. Oversampling by 8 means that the clock speed of UART_RX is 8 times the speed of UART_TX
+![oversampling](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/e499402c-bcff-40ee-8666-e7fefb5ab2ea)
+
+
+### Transmitter FSM
+![UART_TX_FSM](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/33e84e5a-693b-413f-8515-813a2676d537)
+
+### Receiver Block Diagram:
 During the receiving operation, the receiver receives the serial bit data stream and converts it into parallel data by rejecting the „start bit‟ and „stop bit‟ 
   ![UART_RX Block diagram](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/fe49d707-ab65-43cf-b99e-89f119ff0947)
+
+### Receiver FSM
+![UART_RX_FSM](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/715f6674-e0a1-4ad5-a5f9-8756e1cc8988)
 
 ###  UART Data Frame
 UART frame contain start and stop bits, and optional parity bit.
@@ -26,15 +36,15 @@ UART frame contain start and stop bits, and optional parity bit.
 - Data bits: The data bits are the user data or “useful” bits and come immediately after the start bit. 7 or 8 bits is most common. These data bits are usually transmitted with the least significant bit first.
 - Parity bit: A UART frame can also contain an optional parity bit that can be used for error detection. The value of the parity bit depends on the type of parity being used (even or odd)
 
-## Timing and synchronization of UART protocols
-the transmitter and receiver do not share a common clock signal. in this repository I used two clock TX_CLK for transmitter module and RX_CLK for receiver module and used the baud rate 115200 and prescale (Desired division factor) = 32 then :
+## UART clock
+the transmitter and receiver do not share a common clock signal. in this repository I used two clock UART_CLK_TX for transmitter module and UART_CLK_RX for receiver module and used the baud rate 115200 and prescale (division factor) = 32  :
 <br> <br>
 baud rate = 115200 bits/sec = 112.5 KHz
 <br> <br>
 UART_CLK_TX = 112.5 KHz
 <br> <br>
 UART_CLK_RX =115200 * 32 = 3.515 MHz
-
+<br> <br>
 ## Synthesized View of UART chip (post DFT) 
 ![Synthesized View of UART chip](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/67561cf1-9c6b-4ec3-921d-660c68a194a0)
 
