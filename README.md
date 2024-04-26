@@ -12,10 +12,6 @@ UART can be divided into sending module and receiving module according to functi
 During the transmission, the transmitter transmits the parallel data by converting it into a serial data stream and includes „start bit‟ and „stop bit‟   
   ![UART_TX Block diagram](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/3ba1bb48-0140-43e0-8f7c-b8b9ae9addb6)
 
-UART_RX support oversampling by 8, 16, 32. Oversampling by 8 means that the clock speed of UART_RX is 8 times the speed of UART_TX
-![oversampling](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/e499402c-bcff-40ee-8666-e7fefb5ab2ea)
-
-
 ### Transmitter FSM
 ![UART_TX_FSM](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/33e84e5a-693b-413f-8515-813a2676d537)
 
@@ -35,6 +31,12 @@ UART frame contain start and stop bits, and optional parity bit.
 - Stop bit: After the data bits are finished, the stop bit indicates the end of user data. The stop bit is a transition back to the high state.
 - Data bits: The data bits are the user data or “useful” bits and come immediately after the start bit. 7 or 8 bits is most common. These data bits are usually transmitted with the least significant bit first.
 - Parity bit: A UART frame can also contain an optional parity bit that can be used for error detection. The value of the parity bit depends on the type of parity being used (even or odd)
+
+## Timing and Synchronization  
+It is possible for a phase delay to occur during the frame's passage through the system until it reaches the UART_RX, so we will need to use higher clock frequency to oversampling the data.UART_RX support oversampling by 8, 16, 32. data_sampling block in UART_RX will take 3 samples in the middle of clock period to ensure sampl the correct value.
+<br> <br>
+For example: Oversampling by 8 means that the clock speed of UART_RX is 8 times the speed of UART_TX
+![oversampling](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/e499402c-bcff-40ee-8666-e7fefb5ab2ea)
 
 ## UART clock
 the transmitter and receiver do not share a common clock signal. in this repository I used two clock UART_CLK_TX for transmitter module and UART_CLK_RX for receiver module and used the baud rate 115200 and prescale (division factor) = 32  :
