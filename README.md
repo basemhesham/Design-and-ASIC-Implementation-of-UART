@@ -8,19 +8,9 @@ The first step of the ASIC Design flow is the register transfer level (RTL) desi
 
 UART can be divided into sending module and receiving module according to functions. It is worth noting that in order to take into account the accuracy and efficiency of information transmission, the sending module and the receiving module have different methods of confirming information.
 
-### Transmitter block Diagram:
 During the transmission, the transmitter transmits the parallel data by converting it into a serial data stream and includes „start bit‟ and „stop bit‟   
-  ![UART_TX Block diagram](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/3ba1bb48-0140-43e0-8f7c-b8b9ae9addb6)
 
-### Transmitter FSM
-![UART_TX_FSM](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/33e84e5a-693b-413f-8515-813a2676d537)
-
-### Receiver Block Diagram:
 During the receiving operation, the receiver receives the serial bit data stream and converts it into parallel data by rejecting the „start bit‟ and „stop bit‟ 
-  ![UART_RX Block diagram](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/fe49d707-ab65-43cf-b99e-89f119ff0947)
-
-### Receiver FSM
-![UART_RX_FSM](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/715f6674-e0a1-4ad5-a5f9-8756e1cc8988)
 
 ###  UART Data Frame
 UART frame contain start and stop bits, and optional parity bit.
@@ -47,6 +37,12 @@ UART_CLK_TX = 112.5 KHz
 <br> <br>
 UART_CLK_RX =115200 * 32 = 3.515 MHz
 <br> <br>
+
+##  Simulation using VCS
+![Test7](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/58055bd7-a6f3-4ce0-8e29-c399697ca906) 
+<br> <br>
+![Test2](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/807dc089-16ea-4de2-90c2-414951b9ce5a)
+
 ## Synthesized View of UART chip (post DFT) 
 ![Synthesized View of UART chip](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/67561cf1-9c6b-4ec3-921d-660c68a194a0)
 
