@@ -53,26 +53,28 @@ UART_CLK_RX =115200 * 32 = 3.515 MHz
 ## Synthesized view of UART connections (post DFT) 
 ![Synthesized View of UART connections](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/97f61794-663f-4914-b1d0-1a316f23f953)
 
-## Floorplan layout
-![Floorplan layout](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/0153c0c3-0523-4d5a-8cce-9a0cacda34b2)
-
 ## Powerplanning layout
-![Powerplanning layout](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/01e093e3-c491-482a-a71b-7a6936411a0d)
+![power network](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/9e0838d5-ebe0-4ddd-88fc-d4bb8dd8ff21)
 
 ## Placement layout
-![Placement layout](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/a95d5861-3b53-4a52-8b62-5ed3fb63f5ad)
+turn off visibility of the P/G mesh to better see the placement
+![placement](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/28c4d26a-a31c-43b6-a293-b246a22d4544)
 
 ## Clock Tree
-![Clock Tree (SCAN_CLK)](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/cc2f74cc-54b6-4dae-a2c8-77f0c39d770b)
+![Clock tree](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/dec10d49-432f-4898-8d33-c9bbafd011e7)
 
 ## Scan Chain 
-![Scan chain](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/b74baa90-975a-49df-a899-741dc76e5fe8)
+![Scan chain](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/66d34d08-5bbe-464b-bc1d-3e1b4680cc71)
 
 ## Routing layout
-![Routing layout](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/a26025b2-5cad-45ba-9373-df7fb13f9049)
+![Routing](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/6dfff8a5-b3ac-4c8e-8bc3-9ffb82900cef)
 
-## Congestion
-![congestion](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/646dfcd0-dabb-48c9-9120-e620450ce0f6)
+## IR drop 
+to do analyze_power_plan I use set_virtual_pad at nets VDD and VSS
+![Voltage drop](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/1e6ed2c4-8a42-4103-9484-a6ee2ad4e558)
+
+## Congestion map
+![congestion map](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/401dd473-3581-4afe-a3d6-7c93fcff14b2)
 
 
 ## Contributing
