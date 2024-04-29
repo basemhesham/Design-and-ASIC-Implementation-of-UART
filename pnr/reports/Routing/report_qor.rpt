@@ -1,0 +1,24 @@
+****************************************
+Report : qor
+        -summary
+Design : UART
+Version: O-2018.06-SP1
+Date   : Sun Apr 28 19:25:17 2024
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+Design             (Setup)            97.22           0.00              0
+
+Design             (Hold)              0.29           0.00              0
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                           1283.68
+Cell Area (netlist and physical only):         1283.68
+Nets with DRC Violations:        0
+1

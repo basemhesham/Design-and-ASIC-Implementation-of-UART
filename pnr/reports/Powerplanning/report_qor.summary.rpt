@@ -1,0 +1,26 @@
+****************************************
+Report : qor
+        -summary
+        -include { setup }
+Design : UART
+Version: O-2018.06-SP1
+Date   : Sun Apr 28 19:24:21 2024
+****************************************
+Information: The stitching and editing of coupling caps is turned OFF for design 'UART.dlib:UART.design'. (TIM-125)
+Warning: Technology layer 'MRDL' setting 'routing-direction' is not valid (NEX-001)
+Information: Design Average RC for design UART  (NEX-011)
+Information: r = 1.788571 ohm/um, via_r = 0.489881 ohm/cut, c = 0.070408 ff/um, cc = 0.000000 ff/um (X dir) (NEX-017)
+Information: r = 1.785715 ohm/um, via_r = 0.603342 ohm/cut, c = 0.079106 ff/um, cc = 0.000000 ff/um (Y dir) (NEX-017)
+Information: The RC mode used is VR for design 'UART'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 435, routed nets = 0, across physical hierarchy nets = 0, parasitics cached nets = 5, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+Design             (Setup)            97.24           0.00              0
+
+---------------------------------------------------------------------------
+
+1

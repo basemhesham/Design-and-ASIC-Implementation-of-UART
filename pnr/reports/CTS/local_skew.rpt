@@ -1,0 +1,650 @@
+ Info: Initializing timer in CLOCK_SYN_MODE
+****************************************
+Report : clock qor
+        -type local_skew
+        -largest 100
+        -clocks SCAN_CLK
+                UART_CLK_RX
+                UART_CLK_TX
+Design : UART
+Version: O-2018.06-SP1
+Date   : Sun Apr 28 19:25:11 2024
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+=================================================
+==== Local Skew Reporting for Corner default ====
+=================================================
+
+======================================== Summary Table for Corner default ========================================
+Clock /                               Attrs     Sinks    Global       Max    Local Skew   Max Setup    Max Hold
+Skew Group                                                 Skew   Latency    Pair Count  Local Skew  Local Skew
+------------------------------------------------------------------------------------------------------------------
+### Mode: default, Scenario: default
+SCAN_CLK                                M,D        53      0.02      0.33           452        0.02        0.02
+------------------------------------------------------------------------------------------------------------------
+All Clocks                                         53      0.02      0.33                      0.02        0.02
+
+
+  r = latency reported is for a rising edge triggered event at the sink
+  f = latency reported is for a falling edge triggered event at the sink
+
+
+Showing 100 largest datapoints per clock / skew group (L=largest, S=smallest)
+=============================================== Details Table for Corner default ===============================================
+Clock /                                Launch Sink    Capture Sink      Launch     Capture        Late       Early       Local
+Skew Group                             Name           Name             Latency     Latency      Offset      Offset        Skew
+--------------------------------------------------------------------------------------------------------------------------------
+### Mode: default, Scenario: default
+SCAN_CLK
+                                   L   U0_UART_RX/U0_edge_bit_counter/bit_count_reg_1_/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_2_/CLK
+                                                                          0.33 r      0.31 r        --          --        0.02
+                                   L   U0_UART_RX/U0_strt_chk/strt_glitch_reg/CLK
+                                                      U0_UART_TX/U0_mux/OUT_reg/CLK
+                                                                          0.33 r      0.31 r        --          --        0.02
+                                   L   U0_UART_RX/U0_stp_chk/stp_err_reg/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_0_/CLK
+                                                                          0.33 r      0.31 r        --          --        0.02
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_1_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_2_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_1_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_0_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_mux/OUT_reg/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_1_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_2_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_1_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_1_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_1_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_0_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_1_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_1_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_TX/U0_fsm/busy_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_1_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_2_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_0_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_1_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_0_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_0_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_0_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_0_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_0_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_0_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_2_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_2_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_1_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_2_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_0_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_2_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_6_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/busy_reg/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_5_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_5_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_5_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_5_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_2_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_6_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_1_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_6_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_0_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_6_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/DATA_V_reg_6_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_6_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/DATA_V_reg_7_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_6_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/busy_reg/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_6_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_6_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_6_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_2_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_2_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_7_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_1_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_7_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_0_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_7_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/DATA_V_reg_3_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_7_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/DATA_V_reg_7_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_7_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/busy_reg/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_7_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_7_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_7_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_TX/U0_Serializer/DATA_V_reg_7_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_TX/U0_fsm/busy_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_TX/U0_fsm/busy_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_5_/CLK
+                                                      U0_UART_TX/U0_parity_calc/parity_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_1_/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_1_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/DATA_V_reg_0_/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_1_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/busy_reg/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_1_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_0_/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_0_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_2_/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_0_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/busy_reg/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_0_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/parity_reg/CLK
+                                                      U0_UART_TX/U0_parity_calc/parity_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_0_/CLK
+                                                      U0_UART_TX/U0_parity_calc/parity_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_1_/CLK
+                                                      U0_UART_TX/U0_parity_calc/parity_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_2_/CLK
+                                                      U0_UART_TX/U0_parity_calc/parity_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_3_/CLK
+                                                      U0_UART_TX/U0_parity_calc/parity_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_4_/CLK
+                                                      U0_UART_TX/U0_parity_calc/parity_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/busy_reg/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_2_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_6_/CLK
+                                                      U0_UART_TX/U0_parity_calc/parity_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_7_/CLK
+                                                      U0_UART_TX/U0_parity_calc/parity_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_2_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_1_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/ser_count_reg_0_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/DATA_V_reg_1_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_6_/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_6_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_2_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/parity_reg/CLK
+                                                      U0_UART_TX/U0_mux/OUT_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/DATA_V_reg_0_/CLK
+                                                      U0_UART_TX/U0_mux/OUT_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_TX/U0_mux/OUT_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_TX/U0_mux/OUT_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_TX/U0_mux/OUT_reg/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_0_/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_7_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_7_/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_7_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/busy_reg/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_7_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_5_/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_6_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_TX/U0_Serializer/ser_count_reg_2_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/busy_reg/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_6_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_4_/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_5_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_5_/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_5_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/busy_reg/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_5_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_4_/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_4_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_Serializer/DATA_V_reg_5_/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_4_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/busy_reg/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_4_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/parity_reg/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_3_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_3_/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_3_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_fsm/busy_reg/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_3_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                                   L   U0_UART_TX/U0_parity_calc/DATA_V_reg_2_/CLK
+                                                      U0_UART_TX/U0_parity_calc/DATA_V_reg_2_/CLK
+                                                                          0.31 r      0.31 r        --          --        0.00
+                               (H) L   U0_UART_TX/U0_parity_calc/DATA_V_reg_3_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_3_/CLK
+                                                                          0.31 r      0.33 r        --          --        0.02
+                               (H) L   U0_UART_TX/U0_parity_calc/DATA_V_reg_6_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_2_/CLK
+                                                                          0.31 r      0.33 r        --          --        0.02
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/bit_count_reg_3_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_data_sampling/Samples_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/bit_count_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/bit_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_strt_chk/strt_glitch_reg/CLK
+                                                      U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/bit_count_reg_3_/CLK
+                                                      U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/bit_count_reg_2_/CLK
+                                                      U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/bit_count_reg_1_/CLK
+                                                      U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/bit_count_reg_0_/CLK
+                                                      U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                      U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                      U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                      U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                      U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                      U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                      U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_deserializer/P_DATA_reg_0_/CLK
+                                                      U0_UART_RX/U0_data_sampling/Samples_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_data_sampling/Samples_reg_0_/CLK
+                                                      U0_UART_RX/U0_data_sampling/Samples_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                      U0_UART_RX/U0_data_sampling/Samples_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                      U0_UART_RX/U0_data_sampling/Samples_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                      U0_UART_RX/U0_data_sampling/Samples_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                      U0_UART_RX/U0_data_sampling/Samples_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                      U0_UART_RX/U0_data_sampling/Samples_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                      U0_UART_RX/U0_data_sampling/Samples_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_RX/U0_data_sampling/Samples_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_RX/U0_data_sampling/Samples_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_RX/U0_data_sampling/Samples_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_1_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_uart_fsm/current_state_reg_0_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_3_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_1_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+                               (H) L   U0_UART_RX/U0_edge_bit_counter/edge_count_reg_5_/CLK
+                                                      U0_UART_RX/U0_edge_bit_counter/edge_count_reg_0_/CLK
+                                                                          0.33 r      0.33 r        --          --        0.00
+
+
+1

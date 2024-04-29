@@ -1,0 +1,234 @@
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 5
+        -report_by design
+Design : UART
+Version: O-2018.06-SP1
+Date   : Sun Apr 28 19:25:17 2024
+****************************************
+Information: Timer using 'SI, Timing Window Analysis, CRPR'. (TIM-050)
+
+  Startpoint: U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_ (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Endpoint: U0_UART_RX/U0_data_sampling/Samples_reg_2_ (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SCAN_CLK (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.32      0.32
+
+  U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK (SDFFARX1_RVT)
+                                                   0.00      0.32 r
+  U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/Q (SDFFARX1_RVT)
+                                                   0.55      0.86 r
+  U0_UART_RX/U0_data_sampling/U50/Y (INVX0_RVT)    0.12      0.98 f
+  U0_UART_RX/U0_data_sampling/U49/Y (XOR2X1_RVT)   0.24      1.22 r
+  U0_UART_RX/U0_data_sampling/U48/Y (AND3X1_RVT)   0.14      1.36 r
+  U0_UART_RX/U0_data_sampling/U47/Y (NAND4X0_RVT)
+                                                   0.22      1.58 f
+  U0_UART_RX/U0_data_sampling/U39/Y (AND4X1_RVT)   0.33      1.91 f
+  U0_UART_RX/U0_data_sampling/U38/Y (AND4X1_RVT)   0.26      2.17 f
+  U0_UART_RX/U0_data_sampling/U28/Y (NOR4X0_RVT)   0.29      2.46 r
+  U0_UART_RX/U0_data_sampling/U27/Y (MUX21X1_RVT)
+                                                   0.20      2.66 f
+  U0_UART_RX/U0_data_sampling/Samples_reg_2_/D (SDFFARX1_RVT)
+                                                   0.00      2.66 f
+  data arrival time                                          2.66
+
+  clock SCAN_CLK (rise edge)                     100.00    100.00
+  clock network delay (propagated)                 0.29    100.29
+  clock reconvergence pessimism                    0.03    100.32
+  U0_UART_RX/U0_data_sampling/Samples_reg_2_/CLK (SDFFARX1_RVT)
+                                                   0.00    100.32 r
+  clock uncertainty                               -0.20    100.12
+  library setup time                              -0.24     99.88
+  data required time                                        99.88
+  ------------------------------------------------------------------------
+  data required time                                        99.88
+  data arrival time                                         -2.66
+  ------------------------------------------------------------------------
+  slack (MET)                                               97.22
+
+
+
+  Startpoint: U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_ (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Endpoint: U0_UART_RX/U0_data_sampling/Samples_reg_1_ (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SCAN_CLK (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.32      0.32
+
+  U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/CLK (SDFFARX1_RVT)
+                                                   0.00      0.32 r
+  U0_UART_RX/U0_edge_bit_counter/edge_count_reg_2_/Q (SDFFARX1_RVT)
+                                                   0.55      0.86 r
+  U0_UART_RX/U0_data_sampling/U50/Y (INVX0_RVT)    0.12      0.98 f
+  U0_UART_RX/U0_data_sampling/U49/Y (XOR2X1_RVT)   0.24      1.22 r
+  U0_UART_RX/U0_data_sampling/U48/Y (AND3X1_RVT)   0.14      1.36 r
+  U0_UART_RX/U0_data_sampling/U47/Y (NAND4X0_RVT)
+                                                   0.22      1.58 f
+  U0_UART_RX/U0_data_sampling/U39/Y (AND4X1_RVT)   0.33      1.91 f
+  U0_UART_RX/U0_data_sampling/U38/Y (AND4X1_RVT)   0.26      2.17 f
+  U0_UART_RX/U0_data_sampling/U37/Y (MUX21X1_RVT)
+                                                   0.24      2.41 f
+  U0_UART_RX/U0_data_sampling/Samples_reg_1_/D (SDFFARX1_RVT)
+                                                   0.00      2.41 f
+  data arrival time                                          2.41
+
+  clock SCAN_CLK (rise edge)                     100.00    100.00
+  clock network delay (propagated)                 0.29    100.29
+  clock reconvergence pessimism                    0.03    100.32
+  U0_UART_RX/U0_data_sampling/Samples_reg_1_/CLK (SDFFARX1_RVT)
+                                                   0.00    100.32 r
+  clock uncertainty                               -0.20    100.12
+  library setup time                              -0.24     99.88
+  data required time                                        99.88
+  ------------------------------------------------------------------------
+  data required time                                        99.88
+  data arrival time                                         -2.41
+  ------------------------------------------------------------------------
+  slack (MET)                                               97.47
+
+
+
+  Startpoint: U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_ (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Endpoint: U0_UART_RX/U0_deserializer/P_DATA_reg_7_ (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SCAN_CLK (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.32      0.32
+
+  U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK (SDFFARX1_RVT)
+                                                   0.00      0.32 r
+  U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/Q (SDFFARX1_RVT)
+                                                   0.55      0.87 r
+  U0_UART_RX/U0_deserializer/U37/Y (XNOR2X1_RVT)   0.30      1.16 r
+  U0_UART_RX/U0_deserializer/U38/Y (NAND3X0_RVT)   0.12      1.28 f
+  U0_UART_RX/U0_deserializer/U44/Y (NOR4X0_RVT)    0.34      1.62 r
+  U0_UART_RX/U0_deserializer/U9/Y (NAND2X0_RVT)    0.25      1.86 f
+  U0_UART_RX/U0_deserializer/U5/Y (INVX1_RVT)      0.26      2.13 r
+  U0_UART_RX/U0_deserializer/U16/Y (AO22X1_RVT)    0.19      2.32 r
+  U0_UART_RX/U0_deserializer/P_DATA_reg_7_/D (SDFFARX1_RVT)
+                                                   0.00      2.32 r
+  data arrival time                                          2.32
+
+  clock SCAN_CLK (rise edge)                     100.00    100.00
+  clock network delay (propagated)                 0.29    100.29
+  clock reconvergence pessimism                    0.03    100.32
+  U0_UART_RX/U0_deserializer/P_DATA_reg_7_/CLK (SDFFARX1_RVT)
+                                                   0.00    100.32 r
+  clock uncertainty                               -0.20    100.12
+  library setup time                              -0.24     99.88
+  data required time                                        99.88
+  ------------------------------------------------------------------------
+  data required time                                        99.88
+  data arrival time                                         -2.32
+  ------------------------------------------------------------------------
+  slack (MET)                                               97.56
+
+
+
+  Startpoint: U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_ (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Endpoint: U0_UART_RX/U0_deserializer/P_DATA_reg_5_ (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SCAN_CLK (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.32      0.32
+
+  U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK (SDFFARX1_RVT)
+                                                   0.00      0.32 r
+  U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/Q (SDFFARX1_RVT)
+                                                   0.55      0.87 r
+  U0_UART_RX/U0_deserializer/U37/Y (XNOR2X1_RVT)   0.30      1.16 r
+  U0_UART_RX/U0_deserializer/U38/Y (NAND3X0_RVT)   0.12      1.28 f
+  U0_UART_RX/U0_deserializer/U44/Y (NOR4X0_RVT)    0.34      1.62 r
+  U0_UART_RX/U0_deserializer/U9/Y (NAND2X0_RVT)    0.25      1.86 f
+  U0_UART_RX/U0_deserializer/U5/Y (INVX1_RVT)      0.26      2.13 r
+  U0_UART_RX/U0_deserializer/U12/Y (AO22X1_RVT)    0.18      2.31 r
+  U0_UART_RX/U0_deserializer/P_DATA_reg_5_/D (SDFFARX1_RVT)
+                                                   0.01      2.32 r
+  data arrival time                                          2.32
+
+  clock SCAN_CLK (rise edge)                     100.00    100.00
+  clock network delay (propagated)                 0.29    100.29
+  clock reconvergence pessimism                    0.03    100.32
+  U0_UART_RX/U0_deserializer/P_DATA_reg_5_/CLK (SDFFARX1_RVT)
+                                                   0.00    100.32 r
+  clock uncertainty                               -0.20    100.12
+  library setup time                              -0.24     99.87
+  data required time                                        99.87
+  ------------------------------------------------------------------------
+  data required time                                        99.87
+  data arrival time                                         -2.32
+  ------------------------------------------------------------------------
+  slack (MET)                                               97.56
+
+
+
+  Startpoint: U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_ (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Endpoint: U0_UART_RX/U0_deserializer/P_DATA_reg_4_ (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Mode: default
+  Corner: default
+  Scenario: default
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock SCAN_CLK (rise edge)                       0.00      0.00
+  clock network delay (propagated)                 0.32      0.32
+
+  U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/CLK (SDFFARX1_RVT)
+                                                   0.00      0.32 r
+  U0_UART_RX/U0_edge_bit_counter/edge_count_reg_4_/Q (SDFFARX1_RVT)
+                                                   0.55      0.87 r
+  U0_UART_RX/U0_deserializer/U37/Y (XNOR2X1_RVT)   0.30      1.16 r
+  U0_UART_RX/U0_deserializer/U38/Y (NAND3X0_RVT)   0.12      1.28 f
+  U0_UART_RX/U0_deserializer/U44/Y (NOR4X0_RVT)    0.34      1.62 r
+  U0_UART_RX/U0_deserializer/U9/Y (NAND2X0_RVT)    0.25      1.86 f
+  U0_UART_RX/U0_deserializer/U5/Y (INVX1_RVT)      0.26      2.13 r
+  U0_UART_RX/U0_deserializer/U10/Y (AO22X1_RVT)    0.18      2.30 r
+  U0_UART_RX/U0_deserializer/P_DATA_reg_4_/D (SDFFARX1_RVT)
+                                                   0.01      2.31 r
+  data arrival time                                          2.31
+
+  clock SCAN_CLK (rise edge)                     100.00    100.00
+  clock network delay (propagated)                 0.29    100.29
+  clock reconvergence pessimism                    0.03    100.32
+  U0_UART_RX/U0_deserializer/P_DATA_reg_4_/CLK (SDFFARX1_RVT)
+                                                   0.00    100.32 r
+  clock uncertainty                               -0.20    100.12
+  library setup time                              -0.24     99.88
+  data required time                                        99.88
+  ------------------------------------------------------------------------
+  data required time                                        99.88
+  data arrival time                                         -2.31
+  ------------------------------------------------------------------------
+  slack (MET)                                               97.56
+
+
+1

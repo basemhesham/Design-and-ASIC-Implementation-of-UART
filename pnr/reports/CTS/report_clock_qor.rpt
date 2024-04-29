@@ -1,0 +1,42 @@
+ Info: Initializing timer in CLOCK_SYN_MODE
+Information: The stitching and editing of coupling caps is turned OFF for design 'UART.dlib:UART.design'. (TIM-125)
+Information: The RC mode used is CTO(RDE) for design 'UART'. (NEX-022)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 441, routed nets = 5, across physical hierarchy nets = 0, parasitics cached nets = 5, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+Warning: The scenario default has max transition DRC fixing disabled using the set_scenario_status command.  High DRC count may be expected.
+Warning: The scenario default has max capacitance DRC fixing disabled using the set_scenario_status command.  High DRC count may be expected.
+****************************************
+Report : clock qor
+        -type summary
+Design : UART
+Version: O-2018.06-SP1
+Date   : Sun Apr 28 19:25:11 2024
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+==============================================
+==== Summary Reporting for Corner default ====
+==============================================
+
+================================================= Summary Table for Corner default =================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count
+                                                                Count      Area      Area
+------------------------------------------------------------------------------------------------------------------------------------
+### Mode: default, Scenario: default
+SCAN_CLK                                M,D        53      2        0      0.00      7.12      0.33      0.02         0         0
+UART_CLK_TX                             M,D         0      0        0      0.00      0.00        --        --         0         0
+UART_CLK_RX                             M,D         0      0        0      0.00      0.00        --        --         0         0
+------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                         53      2        0      0.00      7.12      0.33      0.02         0         0
+
+
+1

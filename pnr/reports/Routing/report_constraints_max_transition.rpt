@@ -1,0 +1,15 @@
+****************************************
+Report : constraint
+        -verbose
+        -all_violators
+        -max_transition
+Design : UART
+Version: O-2018.06-SP1
+Date   : Sun Apr 28 19:25:17 2024
+****************************************
+
+
+
+
+   Total number of violation(s): 0
+1

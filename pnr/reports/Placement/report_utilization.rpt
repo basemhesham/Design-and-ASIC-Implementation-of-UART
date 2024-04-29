@@ -1,0 +1,24 @@
+****************************************
+Report : report_utilization
+Design : UART
+Version: O-2018.06-SP1
+Date   : Sun Apr 28 19:24:39 2024
+****************************************
+Utilization Ratio:			0.6155
+Utilization options:
+ - Area calculation based on:		site_row of block UART
+ - Categories of objects excluded:	hard_macros macro_keepouts soft_macros io_cells hard_blockages 
+Total Area:				2079.1521
+Total Capacity Area:			2079.1521
+Total Area of cells:			1279.6150
+Area of excluded objects:
+ - hard_macros         :		0.0000
+ - macro_keepouts      :		0.0000
+ - soft_macros         :		0.0000
+ - io_cells            :		0.0000
+ - hard_blockages      :		0.0000
+
+Utilization of site-rows with:
+ - Site 'unit':				0.6155
+
+0.6155
