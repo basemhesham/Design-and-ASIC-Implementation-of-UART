@@ -39,8 +39,10 @@ UART_CLK_RX =115200 * 32 = 3.515 MHz
 <br> <br>
 
 ##  Simulation using VCS
+### UART_RX simulation
 ![Test7](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/58055bd7-a6f3-4ce0-8e29-c399697ca906) 
 <br> <br>
+### UART_TX simulation
 ![Test2](https://github.com/basemhesham/Design-and-ASIC-Implementation-of-UART/assets/136960296/807dc089-16ea-4de2-90c2-414951b9ce5a)
 
 ## Synthesized View of UART chip (post DFT) 
